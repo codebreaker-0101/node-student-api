@@ -1,0 +1,75 @@
+{
+  "info": {
+    "_postman_id": "d1f17d59-9a4f-4006-b3fe-df4da2f91aef",
+    "name": "task",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "update student",
+      "id": "6b5fd4cc-312a-4983-8ded-6c6cb5b5306c",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n  {\n    \"id\": 1,\n    \"name\": \"Raman\",\n    \"dept\": \"MECH\",\n    \"place\": \"Villupuram\"\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Bala\",\n    \"dept\": \"AUTO\",\n    \"place\": \"Nillagiri\"\n  }\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:2900/students",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "2900",
+          "path": [
+            "students"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "students data",
+      "id": "fe5b6919-7abd-4fda-a77a-3a48657ca214",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\r\n    \"id\":1,\r\n    \"name\":\"Raman\",\r\n    \"dept\":\"MECH\",\r\n    \"place\":\"Villupuram\"\r\n},\r\n{ \"id\":3,\r\n    \"name\":\"Bala\",\r\n    \"dept\":\"AUTO\",\r\n    \"place\":\"Nillagiri\"\r\n}]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:2900/students",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "2900",
+          "path": [
+            "students"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
